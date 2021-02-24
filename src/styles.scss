@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@function vw($px) {
+    @return ($px / 375) * 100vw;
+}
+$gray: #C0C0C0;
+$border-color: #dcdcdc;
+$border-style: vw(1) solid $border-color;
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: vw(14);
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.app-name{
+    font-size: vw(14);
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.app-category{
+    color: $gray;
+}

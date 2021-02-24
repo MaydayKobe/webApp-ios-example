@@ -1,0 +1,37 @@
+@import '../styles.scss';
+.main{
+    width: 100%;
+    overflow: hidden;
+    header{
+        padding: vw(10) vw(5);
+    }
+    .top-grossing-app-wrap{
+        border-top: $border-style;
+        border-bottom: $border-style;
+        // padding: vw(10) 0 vw(10) vw(15);
+        padding: vw(10) 0;
+        .top-grossing-app-title{
+            font-size: vw(16);
+            font-weight: 600;
+            padding-left: vw(15);
+        }
+        .top-grossing-app-content{
+            padding-left: vw(15);
+            display: flex;
+            overflow: scroll;
+        }
+    }
+    .top-free-app-wrap{
+        padding-left: vw(15);
+        .top-free-app{
+            border-bottom: $border-style;
+            
+        }
+        .top-free-app:last-child{
+            border-bottom: none;
+        }
+    }
+}
+::-webkit-scrollbar{
+    display: none;
+}

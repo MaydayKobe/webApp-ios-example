@@ -1,0 +1,44 @@
+@import "../../../styles.scss";
+.vertical-app-wrap{
+    // border-bottom: $border-style;
+    display: flex;
+    padding: vw(10) 0;
+}
+.vertical-app-number{
+    color: $gray;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.vertical-app-img{
+    height: vw(75);
+    width: vw(75);
+    margin-left: vw(15);
+    border-radius: vw(15);
+    -webkit-border-radius: vw(15);
+    -moz-border-radius: vw(15);
+    -ms-border-radius: vw(15);
+    -o-border-radius: vw(15);
+}
+.img-even{
+    border-radius: vw(75);
+    -webkit-border-radius: vw(75);
+    -moz-border-radius: vw(75);
+    -ms-border-radius: vw(75);
+    -o-border-radius: vw(75);
+}
+.vertical-app-describe{
+    margin-left: vw(15);
+    .vertical-app-name{
+        width: 60vw;
+    }
+    .vertical-app-category{
+        padding-top: vw(5);
+    }
+    .vertical-app-rating{
+        display: flex;
+        font-size: vw(14);
+        margin-top: vw(10);
+        color: $gray;
+    }
+}

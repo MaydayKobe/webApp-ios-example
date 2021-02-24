@@ -1,0 +1,21 @@
+@import "../../../styles.scss";
+.horizontal-app-wrap{
+    padding: vw(10) vw(15) vw(10) 0;
+}
+.horizontal-app-img{
+    height: vw(90);
+    width: vw(90);
+    border-radius: vw(20);
+    -webkit-border-radius: vw(20);
+    -moz-border-radius: vw(20);
+    -ms-border-radius: vw(20);
+    -o-border-radius: vw(20);
+}
+.horizontal-app-name{
+    width: vw(70);
+    padding: vw(5) vw(10) 0 vw(10);
+    text-align: center;
+}
+.horizontal-app-category{
+    text-align: center;
+}

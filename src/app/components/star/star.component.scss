@@ -1,0 +1,41 @@
+@import "../../../styles.scss";
+.star-rating {
+    unicode-bidi: bidi-override;
+    color: #ffe000;
+    font-size: 0;
+    height: vw(25);
+    margin: 0 auto;
+    position: relative;
+    display: table;
+    padding: 0;
+    // text-shadow: 0 vw(1) 0 #a2a2a2;
+}
+
+.star-rating span {
+    padding-right: vw(2);
+    font-size: vw(14);
+}
+
+.star-rating-top span:after {
+    content: "★";
+}
+
+.star-rating-bottom span:after {
+    content: "☆";
+}
+
+.star-rating-top {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.star-rating-bottom {
+    padding: 0;
+    display: block;
+    z-index: 0;
+}

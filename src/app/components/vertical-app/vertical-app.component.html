@@ -1,0 +1,18 @@
+<div class="vertical-app-wrap">
+    <div class="vertical-app-number">
+        <span>{{index}}</span>
+    </div>
+    <img [class]="index % 2 === 0 ? 'vertical-app-img img-even' : 'vertical-app-img'" [src]="imgUrl">
+    <div class="vertical-app-describe">
+        <div class="vertical-app-name app-name">
+            <span>{{name}}</span>
+        </div>
+        <div class="app-category">
+            <span>{{category}}</span>
+        </div>
+        <div class="vertical-app-rating">
+            <app-star [rating]="rating"></app-star>
+            <span class="vertical-app-rating-span">({{ratingCount}})</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+@import "../../../styles.scss";
+.search-wrap{
+    display: flex;
+    position: relative;
+}
+.search{
+    flex: 1;
+    padding: vw(10) vw(15) vw(10) vw(30);
+    height: vw(15);
+    font-size: vw(14);
+    border: none;
+    outline: 0;
+    background-color: rgba($color: $gray, $alpha: 0.4);
+    // color: #bfbfbf;
+    border-radius: vw(20);
+    -webkit-border-radius: vw(20);
+    -moz-border-radius: vw(20);
+    -ms-border-radius: vw(20);
+    -o-border-radius: vw(20);
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    // user-select: none;
+}
+.icon{
+    position: absolute;
+    width: vw(14);
+    height: vw(14);
+    background: url('../../../assets/icons/icon-search.png') no-repeat;
+    background-size: vw(14) vw(14);
+    top: vw(11);
+    left: vw(10);
+}

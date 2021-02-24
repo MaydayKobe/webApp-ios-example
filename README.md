@@ -2,26 +2,41 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
 
+**WARNING**
+
+> Verify that you are running node 12.4.0 by running node -v in a terminal/console window. Older
+> versions produce errors, but newer versions are fine.
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```bash
+npm i
+npm start
+```
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```bash
+ng build --prod
+```
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm run test
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Support PWA
+Now, build the project
+```bash
+ng build --prod
+```
+Because ng serve does not work with service workers, you must use a separate HTTP server to test your project locally. You can use any HTTP server. The example below uses the http-server package from npm. 
+```bash
+npm i -g http-server
+```
+To serve the directory containing your web files with http-server, run the following command:
+```bash
+http-server -p 8080 -c-1 dist/webApp-ios/example
+```
+With the server running, you can point your browser at http://localhost:8080/. Your application should load normally.
