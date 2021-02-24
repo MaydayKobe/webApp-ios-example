@@ -12,6 +12,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 npm i
 npm start
 ```
+you can point your browser at http://localhost:4200/.
 
 
 ## Build
